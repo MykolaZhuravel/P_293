@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biographie - NaVi</title>
+    <link rel="stylesheet" href="bio-style.css" />
+    <link rel="icon" type="image/ico" href="images/logo.ico" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <header>
+      <div class="logo">
+        <img src="images/navi-esportimes.png" alt="NaVi Logo" />
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="compositions.html">COMPOSITIONS</a></li>
+          <li><a href="tournois.html">TOURNOIS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="bio.html">BIO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Bannière -->
+    <div class="banner">
+      <h1>BIOGRAPHIE</h1>
+    </div>
+
+    <!-- Section de biographie -->
+    <section class="bio-container">
+      <div class="bio-images">
+        <img src="images/moi-1.jpg" alt="moi" class="bio-photo" />
+        <img src="images/moi-2.jpg" alt="moi" class="bio-photo" />
+      </div>
+      <div class="bio-text">
+        <p>
+          Je m’appelle Mykola Zhuravel. Je suis né le 15 avril 2006 en Ukraine.
+          J’y ai habité jusqu’à mes 11 ans. J’ai fait mon école primaire en
+          Ukraine. En 2017, j’ai déménagé en Suisse avec ma Maman et continué
+          mes études. En juillet 2022, j’ai fini l’école obligatoire et je ne
+          savais pas encore quel métier choisir. J’ai découvert l’informatique
+          lors d’un stage chez « Qoqa » et cela m’a motivé à poursuivre dans
+          cette voie. C’est ainsi que j’ai postulé à l’ETML, où j’ai réussi mes
+          examens d’entrée et mon entretien.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-buttons">
+          <a href="contact.html" class="footer-btn">PAGE CONTACT</a>
+          <a href="bio.html" class="footer-btn">PAGE BIO</a>
+        </div>
+        <div class="footer-text">
+          © <span id="year"></span> NaVi. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        let hamburger = document.querySelector(".hamburger");
+        let navbar = document.querySelector(".navbar");
+
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("isactive");
+          navbar.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

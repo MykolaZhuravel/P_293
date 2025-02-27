@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil-NaVi</title>
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="icon" type="image/ico" href="images/logo.ico" />
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let hamburger = document.querySelector(".hamburger");
+      let navbar = document.querySelector(".navbar");
+      let logo = document.querySelector(".logo"); // Sélectionne le logo
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("isactive");
+        navbar.classList.toggle("active");
+        logo.classList.toggle("hidden"); // Masque ou affiche le logo
+      });
+    });
+  </script>
+  <body>
+    <!-- barre de navigation -->
+    <header>
+      <div class="logo">
+        <!-- ajouter une href-->
+        <img src="images/navi-esportimes.png" alt="NaVi Logo" />
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="compositions.html">COMPOSITIONS</a></li>
+          <li><a href="tournois.html">TOURNOIS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="bio.html">BIO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Bannière-->
+    <div class="banner">
+      <!-- enlever accueil. rendre plus informatif -->
+      <h1>ACCUEIL</h1>
+    </div>
+    <section class="content">
+      <!-- Premier paragraphe (Image à droite) -->
+      <div class="text-image right">
+        <div class="text">
+          <p class="TitreParagraphe">
+            <strong>NaVi - Une équipe Légendaire</strong>
+          </p>
+          <br />
+          <p class="paragraphe">
+            Natus Vincere, plus connu sous le nom de NaVi, est l’une des équipes
+            de cybersport les plus emblématiques au monde. Fondée en 2009 en
+            Ukraine, l’organisation a rapidement marqué l’histoire de l’e-sport
+            grâce à ses performances exceptionnelles dans divers jeux
+            compétitifs, notamment Counter-Strike, Dota 2, et plus récemment
+            PUBG et Rainbow Six Siege. Le nom "Natus Vincere", qui signifie "Né
+            pour gagner" en latin, illustre parfaitement l’ambition et la
+            mentalité de l’équipe. Leur première grande reconnaissance est venue
+            avec Counter-Strike 1.6, où NaVi a dominé la scène compétitive en
+            remportant des tournois majeurs comme l'Intel Extreme Masters (IEM)
+            et la World Cyber Games (WCG). En 2011, ils deviennent la première
+            équipe de l'histoire à remporter trois tournois de niveau S
+            consécutifs en une seule année, marquant un exploit inédit à
+            l’époque. Par la suite, NaVi s’est imposée dans d’autres
+            disciplines, notamment Dota 2, où l’équipe a remporté la première
+            édition de The International (TI) en 2011 et atteint plusieurs
+            finales dans les années suivantes. Aujourd’hui, NaVi reste une
+            organisation de premier plan, continuant d’attirer des talents
+            exceptionnels et de concourir au plus haut niveau dans plusieurs
+            jeux. Avec une base de fans passionnés et une histoire riche en
+            succès, NaVi s’est solidement ancrée comme une légende du
+            cybersport.
+          </p>
+        </div>
+        <div class="image-container">
+          <img src="images/logo.webp" alt="logo" />
+        </div>
+      </div>
+
+      <!-- Deuxième paragraphe (Image à gauche) -->
+      <div class="text-image left">
+        <div class="image-container">
+          <img src="images/succes.jpg" alt="succes" />
+        </div>
+        <div class="text">
+          <p class="TitreParagraphe"><strong>Meilleurs Moments</strong></p>
+          <br />
+          <p class="paragraphe">
+            L’histoire de NaVi est jalonnée de moments historiques qui ont
+            marqué l’e-sport. L’un des plus grands exploits de l’équipe reste
+            leur victoire à The International 2011, où ils remportent la toute
+            première édition du plus prestigieux tournoi de Dota 2. Cette
+            victoire leur a valu une reconnaissance mondiale et a cimenté leur
+            statut d’équipe légendaire. Un autre moment iconique s’est produit
+            en 2010 lorsque leur équipe Counter-Strike 1.6 a réussi à gagner
+            trois tournois majeurs (IEM, ESWC et WCG) en une seule année, une
+            première dans l’histoire du jeu. Dans Counter-Strike: Global
+            Offensive, NaVi a connu plusieurs moments de gloire, notamment en
+            2021 lorsqu’ils ont enfin remporté leur premier Major lors du PGL
+            Major Stockholm. Ce tournoi a été historique car NaVi a réussi à le
+            remporter sans perdre une seule carte, une performance inédite qui a
+            confirmé leur domination totale sur la scène CS:GO à cette époque.
+            Un autre moment marquant reste le clutch légendaire de s1mple sur
+            Cache contre Fnatic lors de l’ESL One Cologne 2016, où il a réalisé
+            un double no-scope inoubliable en demi-finale, gravé à jamais dans
+            l’histoire de CS:GO. En dehors de CS et Dota 2, NaVi s’est également
+            illustré dans d’autres jeux comme PUBG et Rainbow Six Siege, en
+            remportant des championnats majeurs et en consolidant leur statut
+            d’organisation de premier plan dans le cybersport. Chaque génération
+            de joueurs de NaVi a su marquer l’histoire à sa manière, et l’équipe
+            continue encore aujourd’hui d’écrire de nouvelles pages de légende.
+          </p>
+        </div>
+      </div>
+
+      <!-- Troisième paragraphe (Image à droite) -->
+      <div class="text-image right">
+        <div class="text">
+          <p class="TitreParagraphe"><strong>Meilleurs Joueurs</strong></p>
+          <br />
+          <p class="paragraphe">
+            NaVi a toujours su s’entourer de joueurs d’exception qui ont marqué
+            leur époque. En Counter-Strike 1.6, Markeloff (Yegor Markelov) était
+            considéré comme l’un des meilleurs snipers du monde et un élément
+            clé de l’équipe qui a dominé la scène en 2010-2011. Avec lui,
+            d’autres légendes comme Edward, Zeus, et Starix ont contribué à
+            façonner la domination de NaVi à cette époque. Avec l’arrivée de
+            Counter-Strike: Global Offensive, une nouvelle ère a commencé. Parmi
+            les figures emblématiques, s1mple (Oleksandr Kostyliev) est sans
+            doute le plus grand joueur de l’histoire de NaVi et l’un des
+            meilleurs joueurs de CS:GO de tous les temps. Arrivé dans l’équipe
+            en 2016, il a révolutionné le jeu par ses performances individuelles
+            hors normes, remportant de nombreux trophées et étant élu plusieurs
+            fois meilleur joueur du monde par HLTV. Aux côtés de s1mple,
+            electronic, Boombl4, et plus récemment b1t ont marqué l’histoire
+            moderne de NaVi, notamment lors de leur victoire au Major de
+            Stockholm 2021. Dans Dota 2, l’un des noms les plus iconiques reste
+            Dendi (Danil Ishutin), le joueur charismatique qui a mené NaVi à la
+            victoire lors du premier The International en 2011. Son style de jeu
+            spectaculaire et son esprit d’équipe ont fait de lui l’un des
+            joueurs les plus aimés de la communauté Dota. Avec lui, des joueurs
+            comme XBOCT, Puppey et Funn1k ont contribué aux nombreuses réussites
+            de NaVi dans les premières années de la scène compétitive Dota 2.
+            Dans d’autres jeux comme PUBG, Rainbow Six Siege ou encore Apex
+            Legends, NaVi a également brillé grâce à des talents exceptionnels
+            qui ont contribué à élargir l’impact de l’organisation sur la scène
+            e-sportive mondiale. Chaque époque a vu émerger de nouveaux héros
+            sous le maillot jaune et noir, consolidant la légende de NaVi dans
+            l’univers du gaming compétitif.
+          </p>
+        </div>
+        <div class="image-container">
+          <img src="images/primesimple.webp" alt="s1mple" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-buttons">
+          <a href="contact.html" class="footer-btn">PAGE CONTACT</a>
+          <a href="bio.html" class="footer-btn">PAGE BIO</a>
+        </div>
+        <div class="footer-text">
+          © <span id="year"></span> NaVi. Tous droits réservés.
+        </div>
+        /* ========== AJOUTER LA DATE (NE MARCHE PAS) ========== */
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,396 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+  background-image: url(https://d1fytg1nnnd8c0.cloudfront.net/wp-content/uploads/2021/06/natus-vincere.png);
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Barre de navigation */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  padding: 15px 50px;
+  border-bottom: 2px solid black;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logo img {
+  width: 150%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Centrer la navigation */
+nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1e211;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* Bannière CONTACT */
+.banner {
+  background: #f1e211;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+/* Conteneur du formulaire */
+.contact-container {
+  width: 60%;
+  margin: 30px auto;
+  background: #3a3a3a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(12, 19, 36, 0.623);
+}
+
+/* Titre du formulaire */
+.contact-container h2 {
+  text-align: center;
+  font-size: 24px;
+  background: #f1e211;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+}
+
+.titrecontact {
+  color: white;
+  font-size: 20px;
+}
+
+/* Style du formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Disposition des champs */
+.form-group {
+  display: flex;
+  gap: 20px;
+}
+
+/* Conteneur des champs */
+.input-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Champs du formulaire */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #f1e211;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #222;
+  color: white;
+}
+
+/* Style des labels */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Bouton d'envoi */
+.submit-btn {
+  background: #f1e211;
+  color: black;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* Pied de page */
+footer {
+  background: black;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Conteneur du pied de page */
+.footer-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Boutons du pied de page */
+.footer-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-btn {
+  background: #f1e211;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #000;
+  border-color: #f1e211;
+  color: black;
+  transition: 0.3s;
+}
+
+.footer-btn:hover {
+  background: #000;
+  color: white;
+}
+
+/* Texte des droits d’auteur */
+.footer-text {
+  font-size: 14px;
+  color: #f1e211;
+}
+
+/* Assurez-vous que la hauteur de la page est au moins de 100% */
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Permet au contenu de s'étendre tout en laissant le footer en bas */
+main {
+  flex: 1;
+}
+
+/* Pied de page toujours en bas */
+footer {
+  background: black;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* ========== STYLES RESPONSIVE & HAMBURGER MENU ========== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 4px;
+  background: yellow;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animation du menu hamburger */
+.hamburger.isactive .line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.isactive .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.isactive .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Menu de navigation pour mobile */
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: white;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 1024px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Barre de navigation */
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  /* Afficher le menu hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Cacher le menu par défaut */
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: black;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  /* Section Texte + Image */
+  .text-image {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-image.left,
+  .text-image.right {
+    flex-direction: column;
+  }
+
+  .text-image img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  /* Formulaire */
+  .contact-container {
+    width: 90%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Pied de page */
+  .footer-buttons {
+    flex-direction: column;
+  }
+}
+/* Cacher le logo lorsque le menu hamburger est ouvert */
+.logo.hidden {
+  display: none;
+}
