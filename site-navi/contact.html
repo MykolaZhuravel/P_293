@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <meta name="robots" content="noindex, nofollow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
+    <title>Contact-NaVi</title>
+    <link rel="stylesheet" href="media/contact-style.css" />
+    <link rel="icon" type="image/ico" href="media/images/logo.ico" />
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let hamburger = document.querySelector(".hamburger");
+      let navbar = document.querySelector(".navbar");
+      let logo = document.querySelector(".logo");
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("isactive");
+        navbar.classList.toggle("active");
+        logo.classList.toggle("hidden");
+      });
+    });
+  </script>
+  <body>
+    <header>
+      <a href="index.html">
+        <div class="logo">
+          <img src="media/images/navi-esportimes.png" alt="NaVi Logo" />
+        </div>
+      </a>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="compositions.html">COMPOSITIONS</a></li>
+          <li><a href="tournois.html">TOURNOIS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Bannière -->
+      <div class="banner">
+        <h1>CONTACT</h1>
+      </div>
+
+      <!-- Section de contact -->
+      <section class="contact-container">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <div class="input-box">
+              <label for="nom" class="titrecontact"><strong>Nom</strong></label>
+              <input type="text" id="nom" name="nom" required />
+            </div>
+            <div class="input-box">
+              <label for="prenom" class="titrecontact"
+                ><strong>Prénom</strong></label
+              >
+              <input type="text" id="prenom" name="prenom" required />
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="email" class="titrecontact"
+              ><strong>E-Mail</strong></label
+            >
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="input-box">
+            <label for="message" class="titrecontact"
+              ><strong>Message</strong></label
+            >
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-buttons">
+          <a href="contact.html" class="footer-btn">PAGE CONTACT</a>
+          <a href="bio.html" class="footer-btn">Auteur</a>
+        </div>
+        <div class="footer-text">
+          © <span id="year"></span> NaVi. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
