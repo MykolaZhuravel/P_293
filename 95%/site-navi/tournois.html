@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <meta name="robots" content="noindex, nofollow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
+    <title>Tournois - NaVi</title>
+    <link rel="stylesheet" href="media/tournois-style.css" />
+    <link rel="icon" type="image/ico" href="media/images/logo.ico" />
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let hamburger = document.querySelector(".hamburger");
+      let navbar = document.querySelector(".navbar");
+      let logo = document.querySelector(".logo"); //Séléctionner le logo
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("isactive");
+        navbar.classList.toggle("active");
+        logo.classList.toggle("hidden"); //Afficher ou Cahcer le logo
+      });
+    });
+  </script>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <a href="index.html">
+        <div class="logo">
+          <img src="media/images/navi-esportimes.png" alt="NaVi Logo" />
+        </div>
+      </a>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="compositions.html">COMPOSITIONS</a></li>
+          <li><a href="tournois.html">TOURNOIS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Bannière -->
+    <div class="banner">
+      <h1>TOURNOIS</h1>
+    </div>
+
+    <!-- Section des tournois -->
+    <section class="tournament-container">
+      <div class="tournament">
+        <div class="tournament-image">
+          <img src="media/images/tournois-1.jpg" alt="Tournoi 1" />
+        </div>
+        <div class="tournament-text">
+          <strong>Le Major de Stockholm 2021 :</strong> Une Victoire Historique Le PGL Major
+          Stockholm 2021 restera gravé dans l’histoire de Counter-Strike: Global
+          Offensive (CS:GO) comme l’un des tournois les plus dominés par une
+          seule équipe. Après des années à être proche du sacre, NaVi a marqué
+          ce Major en s’imposant sans perdre une seule carte. Avec un s1mple en
+          état de grâce et un collectif parfaitement rodé, l’équipe ukrainienne
+          a survolé la compétition en éliminant tour à tour les meilleures
+          formations du monde, notamment G2 Esports en finale. Cette victoire a
+          confirmé NaVi comme la meilleure équipe de CS:GO de l’époque, une
+          consécration méritée après plusieurs finales perdues dans le passé. Ce
+          tournoi a non seulement marqué l’histoire de l’esport, mais il a
+          également scellé l’héritage de s1mple, souvent considéré comme le plus
+          grand joueur de CS:GO. Pour NaVi, ce Major a été bien plus qu’un
+          trophée : il a symbolisé l’aboutissement d’années d’efforts et de
+          persévérance.
+        </div>
+      </div>
+      <div class="tournament">
+        <div class="tournament-image">
+          <img src="media/images/tournois-2.jpg" alt="Tournoi 2" />
+        </div>
+        <div class="tournament-text">
+          <strong>The International 2011 :</strong> La Légende de NaVi en Dota 2 Lorsque The
+          International 2011 (TI1) a été annoncé, NaVi était déjà une équipe
+          respectée sur la scène Dota 2, mais personne ne s’attendait à une
+          telle domination. À une époque où le jeu était encore en pleine
+          évolution, NaVi a imposé son style agressif et stratégique, écrasant
+          ses adversaires et remportant le premier tournoi majeur de Dota 2.
+          Dendi, le joueur emblématique de cette époque, est devenu une légende
+          grâce à ses moves spectaculaires et son gameplay innovant. La finale
+          contre EHOME reste l’une des plus mémorables de l’histoire de Dota 2,
+          avec des stratégies et des actions qui sont encore étudiées
+          aujourd’hui. Cette victoire a posé les bases de la suprématie de NaVi
+          sur Dota 2 durant les années suivantes. Même après plus d'une
+          décennie, The International 2011 reste l'un des moments les plus
+          iconiques de l’histoire de l’esport, et NaVi en a été le grand
+          protagoniste.
+        </div>
+      </div>
+
+      <div class="tournament">
+        <div class="tournament-image">
+          <img src="media/images/tournois-3.jpg" alt="Tournoi 3" />
+        </div>
+        <div class="tournament-text">
+          <strong>ESL One Cologne 2018 :</strong> Un Chapitre Inoubliable L’ESL One Cologne 2018
+          est souvent surnommé le "Cathedral of Counter-Strike", et pour cause :
+          cet événement est l’un des plus prestigieux du circuit CS:GO. NaVi y a
+          écrit l’un des plus beaux chapitres de son histoire en surclassant ses
+          adversaires avec un niveau de jeu exceptionnel. L’équipe menée par
+          s1mple et electronic a prouvé sa supériorité tactique et mécanique
+          face à des équipes comme Astralis et FaZe Clan. La finale contre BIG a
+          été une démonstration de force, où NaVi n’a laissé aucune chance à ses
+          adversaires, remportant le tournoi devant un public en délire à
+          Cologne. Cette victoire n’a pas seulement apporté un nouveau trophée à
+          leur palmarès, mais elle a également confirmé leur capacité à briller
+          sur les plus grandes scènes du monde. L’ESL One Cologne est un tournoi
+          à part, et cette édition 2018 restera gravée comme l’une des plus
+          grandes réussites de NaVi en CS:GO
+        </div>
+      </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-buttons">
+          <a href="contact.html" class="footer-btn">PAGE CONTACT</a>
+          <a href="bio.html" class="footer-btn">Auteur</a>
+        </div>
+        <div class="footer-text">
+          © <span id="year"></span> NaVi. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
