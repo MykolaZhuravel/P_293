@@ -1,0 +1,220 @@
+/* CONTENU_TOURNOIS */
+.content {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.TitreParagraphe {
+  font-size: 30px;
+}
+
+.paragraphe {
+  font-size: 18px;
+}
+
+/* Conteneur des tournois */
+.tournament-container {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+/* Bloc tournoi */
+.tournament {
+  width: 30%;
+  background-color: rgba(12, 19, 36, 0.76);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Taille uniforme des images */
+.tournament-image {
+  width: 100%;
+  height: 250px; /* Hauteur fixe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tournament-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajuste l'image sans distorsion */
+  border-radius: 10px;
+}
+
+/* Texte des tournois */
+.tournament-text {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 15px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .tournament-container {
+    width: 90%;
+  }
+
+  .tournament {
+    width: 100%;
+  }
+
+  .tournament-image img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Ajuste l'image sans distorsion */
+    border-radius: 10px;
+  }
+
+  .tournament-text {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  /* Ajustement du pied de page */
+  .footer-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1450px) {
+  .tournament-container {
+    width: 90%;
+  }
+
+  .tournament {
+    width: 100%;
+  }
+
+  .tournament-image img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Ajuste l'image sans distorsion */
+    border-radius: 10px;
+  }
+
+  .tournament-text {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  /* Ajustement du pied de page */
+  .footer-buttons {
+    flex-direction: column;
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 4px;
+  background: #f1e211;
+  margin: 3px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Animation du menu hamburger */
+.hamburger.isactive .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.isactive .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.isactive .line:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+/* Menu de navigation pour mobile */
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: white;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+/* Responsive */
+@media (max-width: 768px) {
+
+  /* Barre de navigation */
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  /* Afficher le menu hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Cacher le menu par défaut */
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 112px;
+    left: 0;
+    width: 100%;
+    background: black;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+}

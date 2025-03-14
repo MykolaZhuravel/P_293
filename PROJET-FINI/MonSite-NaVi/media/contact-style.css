@@ -1,0 +1,227 @@
+/* CONTENU_CONTACT */
+.contact-container {
+  width: 60%;
+  margin: 30px auto;
+  background: #3a3a3a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(12, 19, 36, 0.623);
+}
+
+.titrecontact {
+  color: white;
+  font-size: 20px;
+}
+
+/* Style du formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Disposition des champs */
+.form-group {
+  display: flex;
+  gap: 20px;
+}
+
+/* Conteneur des champs */
+.input-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Champs du formulaire */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #f1e211;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #222;
+  color: white;
+}
+
+/* Style des labels */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Bouton d'envoi */
+.submit-btn {
+  background: #f1e211;
+  color: black;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: black;
+  color: white;
+}
+/* Permet au contenu de s'étendre tout en laissant le footer en bas */
+main {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* ========== STYLES RESPONSIVE & HAMBURGER MENU ========== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 4px;
+  background: #f1e211;
+  margin: 3px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Animation du menu hamburger */
+.hamburger.isactive .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.isactive .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.isactive .line:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+/* Menu de navigation pour mobile */
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: white;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 1024px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Barre de navigation */
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  /* Afficher le menu hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Cacher le menu par défaut */
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 112px;
+    left: 0;
+    width: 100%;
+    background: black;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+  /* Section Texte + Image */
+  .text-image {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-image.left,
+  .text-image.right {
+    flex-direction: column;
+  }
+
+  .text-image img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  /* Formulaire */
+  .contact-container {
+    width: 90%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Pied de page */
+  .footer-buttons {
+    flex-direction: column;
+  }
+}
